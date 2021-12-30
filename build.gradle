@@ -28,6 +28,7 @@ jacocoTestReport {
 	reports {
 		csv.enabled true
 		html.enabled true
+		xml.enabled true
 	}
 }
 
