@@ -42,6 +42,10 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+        args: >
+         -Dsonar.organization=ranjithsaccount
+         -Dsonar.projectKey=ranjithsaccount_springbootTesting
       - name: Sonarcloud Quality Gate check
         uses: sonarsource/sonarqube-quality-gate-action@master
         with:
