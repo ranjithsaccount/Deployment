@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonarqube --info
-      - name: SonarQube Quality Gate check
+      - name: Sonarcloud Quality Gate check
         uses: sonarsource/sonarqube-quality-gate-action@master
         with:
           scanMetadataReportFile: build/sonar/report-task.txt
