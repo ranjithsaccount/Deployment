@@ -44,8 +44,3 @@ jobs:
           scanMetadataReportFile: build/sonar/report-task.txt
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      - name: test
-        run: |
-          cat build/sonar/report-task.txt
-          ls $GITHUB_ACTION_PATH/script/
-          pwd
