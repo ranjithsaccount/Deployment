@@ -26,5 +26,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       id: build
-      run: ./gradlew bootJar
-      continue-on-error: true
+      run: |
+        ./gradlew bootJar
+        ls -a build/libs 
