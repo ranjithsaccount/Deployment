@@ -31,6 +31,6 @@ jobs:
         mkdir artifacts && cp build/libs *.jar artifacts
     - name: Persist workflow data as artificats
       uses: actions/upload-artifact@v2
-        with:
-          name: github-actions-artifact
-          path: artifacts
+      with:
+        name: github-actions-artifact
+        path: artifacts
