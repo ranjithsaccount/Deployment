@@ -28,7 +28,7 @@ jobs:
       id: build
       run: |
         ./gradlew bootJar
-        mkdir artifacts && cp build/libs *.jar artifacts
+        mkdir artifacts && cp -r build/libs *.jar artifacts
     - name: Persist workflow data as artificats
       uses: actions/upload-artifact@v2
       with:
