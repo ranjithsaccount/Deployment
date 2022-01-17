@@ -15,7 +15,7 @@ env:
   IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
   IBM_CLOUD_REGION: eu-de
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
-  REGISTRY_HOSTNAME: de.icr.io
+  REGISTRY_HOSTNAME: icr.io
   IMAGE_NAME: deploy-springbootapp
   IKS_CLUSTER: c7i05f5f0hv8s72mooa0
   DEPLOYMENT_NAME: deploy-springbootapp
