@@ -13,9 +13,9 @@ on:
 env:
   GITHUB_SHA: ${{ github.sha }}
   IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-  IBM_CLOUD_REGION: eu-de
+  IBM_CLOUD_REGION: eu-central
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
-  REGISTRY_HOSTNAME: icr.io
+  REGISTRY_HOSTNAME: de.icr.io
   IMAGE_NAME: deploy-springbootapp
   IKS_CLUSTER: c7i05f5f0hv8s72mooa0
   DEPLOYMENT_NAME: deploy-springbootapp
